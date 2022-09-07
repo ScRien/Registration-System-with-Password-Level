@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 15px;
+        }
+        .baslik{
+            position: relative;
+            text-align: left;
+            transition: 500ms;
+        }
+        .baslik:hover{
+            color: orangered;
+        }
+        .baslik:hover hr{
+            border: 3px solid orangered;
+        }
+        .baslik hr{
+            border: 3px solid black;
+            width: 350px;
+            margin-left: 30px;
+            transition: 500ms;
+            padding: 0px;
+        }
+        .baslik h1{
+            margin-left: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="baslik">
+    <h1>Güvenlik Kontrollü Kayıt Formu</h1>
+    <hr>
+    </div>
+    <form name="kayitForm" onsubmit="KayitFormFnct()">
+    <input type="text" id="username" placeholder="Bir Kullanıcı Adı Giriniz" autocomplete="off">
+    <input type="password" id="pass" placeholder="Bir Şifre Giriniz">
+    <input type="submit" value="Kayıt Ol">
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
